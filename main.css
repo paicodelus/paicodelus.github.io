@@ -1,6 +1,6 @@
 
 #root {display: grid; grid-template-columns: 1fr; grid-template-rows: auto; grid-row-gap: 0px}
-#header1 {display: grid; grid-template-columns: 1fr; grid-template-rows: auto; background: rgb(245, 245, 245)}
-#header2 {display: grid; grid-template-columns: 1fr; grid-template-rows: auto; background: white}
-#header3 {display: grid; grid-template-columns: 1fr 4fr 1fr; grid-template-rows: auto; background: rgb(92, 235, 31)}
-#header3 > div:nth-child(odd) {background-color: rgb(205, 34, 139)}
+#head {display: grid; grid-template-columns: 1fr; grid-template-rows: auto; background: rgb(245, 245, 245)}
+#header {display: grid; grid-template-columns: 1fr; grid-template-rows: auto; background: white}
+#headest {display: grid; grid-template-columns: 1fr 4fr 1fr; grid-template-rows: auto; background: rgb(92, 235, 31)}
+#headest3 > div:nth-child(odd) {background-color: rgb(205, 34, 139)}
