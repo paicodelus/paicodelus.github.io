@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+</head>
+<body>
+
+<script>
+
+//make divs
+let root = makeDiv('root'); document.querySelector('body').append(root)
+let line1 = makeDiv('header1'); root.appendChild(line1)
+let line2 = makeDiv('header2'); root.appendChild(line2)
+let line3 = makeDiv('header3'); root.appendChild(line3)
+line3.appendChild(makeDiv('block1')); line3.appendChild(makeDiv('block2'));line3.appendChild(makeDiv('block3'))
+//block1.appendChild(makeElement('inside0','pic'))
+//block2.appendChild(makeElement('inside1','ul')); block2.appendChild(makeElement('inside2','ul')); block2.appendChild(makeElement('inside3','div'))
+
+
+//set dimensions
+line1.style.height = (window.innerHeight/18) + 'px'
+line2.style.height = (window.innerHeight/15) + 'px'
+line3.style.height = (window.innerHeight/2) + 'px'
+
+//multipliers
+function makeDiv(idName) {
+let box = document.createElement('div')
+box.id = idName
+return box
+}
+
+function makeElement(idName, element) {
+let box = document.createElement(element)
+box.id = idName
+return box
+}
+
+
+</script>
+</body>
+
+</html>
