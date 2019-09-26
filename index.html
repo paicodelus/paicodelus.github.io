@@ -15,7 +15,7 @@
 
 //make divs
 let root = makeDiv1('root'); document.querySelector('body').append(root)
-let line1 = makeDiv1('header'); root.appendChild(line1)
+let line1 = makeDiv1('head'); root.appendChild(line1)
 let line2 = makeDiv1('header'); root.appendChild(line2)
 let line3 = makeDiv1('headest'); root.appendChild(line3)
 
@@ -35,9 +35,9 @@ line2.style.height = (window.innerHeight/15) + 'px'
 line3.style.height = (window.innerHeight/2) + 'px'
 
 //multipliers
-function makeDiv1(idName, classID) {
+function makeDiv1(idName) {
 let box = document.createElement('div')
-box.id = idName; box.className = classID; 
+box.id = idName 
 return box
 }
 
